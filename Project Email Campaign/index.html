@@ -60,6 +60,25 @@
         font-weight: inherit;
         line-height: inherit;
       }
+      a{
+        font-weight: bold;
+      }
+      a:hover{
+        color:rgb(153, 107, 22) !important;
+        text-decoration: none;
+      }
+      a.button{
+        transition: all 0.4s ease;
+      }
+      a.button:hover{
+        background-color:#e6c655 !important;
+        border-top: 10px solid #e6c655 !important;
+        border-bottom: 10px solid #e6c655 !important;
+        border-left: 16px solid #e6c655 !important;
+        border-right: 16px solid #e6c655 !important;
+        opacity: 0.9;
+        transform: translateY(-9px);
+      }
 
       /* SAMSUNG MAIL BLUE LINKS */
       #MessageViewBody a {
@@ -304,6 +323,7 @@
                     display: inline-block;
                     margin-top: 20px;
                   "
+                  class = "button"
                 >
                   Learn More
                 </a>
@@ -319,7 +339,7 @@
                 </p>
                 <p>
                   We hate to see you go, but if you must
-                  <a href="#">unsubscribe</a>
+                  <a class = "link" href="#">unsubscribe</a>
                 </p>
               </td>
             </tr>
