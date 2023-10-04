@@ -91,7 +91,25 @@
         }
       }
 
+      input{
+        display:none
+      }
+
+      label{
+        cursor: pointer;
+      }
+
+      .review{
+        display: none;
+      }
       
+      #review1:checked ~ .review1,
+      #review2:checked ~ .review2,
+      #review3:checked ~ .review3{
+        display: block;
+      } 
+
+
       /* SAMSUNG MAIL BLUE LINKS */
       #MessageViewBody a {
         color: inherit;
@@ -123,7 +141,7 @@
             cellpadding="0"
             border="0"
             role="presentation"
-            style="max-width: 600px; margin: 0 auto"
+            style="max-width: 600px; margin: 0 auto; background-color: #f3f3f0;"
           >
             <!-- Logo image -->
             <tr>
@@ -170,9 +188,10 @@
                   background-size: no-repeat;
                   background-color: transparent;
                   text-align: center;
+                  font-weight: 600;
                 "
               >
-                <p>
+                <p >
                   Join our email campaign to learn music and unlock the exciting
                   world of musical creativity! Whether you're a beginner or an
                   experienced musician, our program offers high-quality music
@@ -372,13 +391,25 @@
             <tr>
               <td align = "center">
                 <h2>Don't believe us? Check out these reviews!</h2>
-                <input type="radio" name="slides" id="review1" checked>
-                <input type="radio" name="slides" id="review2">
-                <input type="radio" name="slides" id="review3">
+                <input type="radio" name="reviews" id="review1" checked>
+                <input type="radio" name="reviews" id="review2">
+                <input type="radio" name="reviews" id="review3">
 
                 <label for="review1">Review 1</label>
                 <label for="review2">Review 2</label>
                 <label for="review3">Review 3</label>
+
+                <div class = "review review1">
+                    <p>"I couldn't believe how fast I started playing my favorite songs at Sham's Academy! The instructors are incredibly talented and patient. I'm living my dream as a guitarist now! Thanks, Sham's Academy!"</p>
+                </div>
+
+                <div class = "review review2">
+                    <p>"Sham's Academy made learning the violin an absolute joy. The teachers are so supportive and knowledgeable. I've progressed so much in just a few months. I'm forever grateful for this musical journey!"</p>
+                </div>
+
+                <div class = "review review3">
+                    <p>""Learning piano at Sham's Academy has been a fantastic experience. The atmosphere is welcoming, and the instructors are top-notch. I never thought I'd be able to play classical pieces, but now I can! Highly recommend Sham's Academy to everyone."</p>
+               </div>
               </td>
             </tr>
 
